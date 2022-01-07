@@ -26,35 +26,7 @@ bearing: -0.52
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                {
-                    layer: 'huisarts',
-                       opacity: 0},
-                       {
-                        layer: 'trial_one',
-                           opacity: 0},
-                       {
-                        layer: 'centroid',
-                           opacity: 0},
-                    {
-                    layer: 'supermarkets',
-                       opacity: 0   
-                     },
-                     {
-                        layer: 'schools',
-                           opacity: 0   
-                         },
-                    {
-                        layer: 'stations',
-                        opacity: 0  
-                        },
-                        {
-                            layer: 'studyzone',
-                            opacity: 0  
-                            },
-                            {
-                                layer: 'trial_flat',
-                                opacity: 0  
-                                }  ,
+                
                                 {
                                     layer: 'geld1',
                                     opacity: 0 
@@ -381,7 +353,7 @@ bearing: -0.52
             image: 'https://i.ibb.co/drS5H2g/legend.jpg',
            
             location: {
-                center: [5.7924, 51.38566],
+                center: [5.7024, 51.38566],
 zoom: 10.36,
 pitch: 60.00,
 bearing: 90
