@@ -17,7 +17,7 @@ var config = {
             title: 'What makes a complete neighborhood?',
             description: 'A “complete neighborhood” is an area where residents have safe and convenient access to goods and services they need on a daily or regular basis. As urbanism continues to grow, it is important for regions to remain accessible for all residents. The emphasis on complete neighborhoods ensures that all residents have access to the services for a healthy and happy life. For the purposes of this study we have defined safe and convenient access to a 15 minute bike ride.',
             location: {
-                center: [5.71624, 51.38566],
+                center: [5.79624, 51.38566],
 zoom: 10.36,
 pitch: 0.00,
 bearing: -0.52
@@ -66,7 +66,7 @@ bearing: -0.52
             
             description: 'For this study we looked primarily at four amenities that comprise a complete neighborhood. Intercity rail transit, grocery stores, elementary schools, and general practitioners (shown with their various icons on the map). These four amenities are the basis to a healthy and sustainable neighborhood. The goal of complete neighborhoods is to ensure that every resident is within 15 minutes of at least on of these amenities by 15 minute bike.',
             location: {
-                center: [5.71624, 51.38566],
+                center: [5.79624, 51.38566],
 zoom: 10.36,
 pitch: 0.00,
 bearing: -0.52
@@ -102,7 +102,7 @@ bearing: -0.52
             
             description: 'We have analyzed and region east of Eindhoven that is comprised of both rural and urban areas (shown here in red). This area was chosen specifically to understand the contrast of urban and rural areas and their ‘completeness’ of their neighborhoods.',
             location: {
-                center: [5.71624, 51.38566],
+                center: [5.79624, 51.38566],
 zoom: 10.36,
 pitch: 0.00,
 bearing: -0.52
@@ -129,10 +129,11 @@ bearing: -0.52
             id: 'other-identifier2',
             alignment: 'right',
             hidden: false,
+            image: 'https://i.ibb.co/y83wrtw/legendasd.jpg',
             title: 'The Study',
-            description: 'For the study we divided the study region into a grid of 500x500 m hexagons. We then made sure to look only at areas where people lived. The resulting hexagons are shown here in grey.',
+            description: 'For the study we divided the study region into a grid of 500x500 m hexagons. We then made sure to look only at areas where people lived. The resulting hexagons are shown here with their populations.',
             location: {
-                center: [5.71624, 51.38566],
+                center: [5.79624, 51.38566],
 zoom: 10.36,
 pitch: 0.00,
 bearing: -0.52
@@ -142,7 +143,7 @@ bearing: -0.52
             callback: '',
             onChapterEnter: [ {
                 layer: 'trial_flat',
-                opacity: 1 
+                opacity: .8
                 },
                 {
                     layer: 'huisarts',
@@ -164,7 +165,7 @@ bearing: -0.52
             id: 'other-identifier3',
             alignment: 'right',
             hidden: false,
-            title: 'Gelderland Example',
+            title: 'Geldorp Example',
             
             description: 'To complete the study we derived the centroid of each hexagon (here we see the centroid of a hexagon in Gelderland). It is from this starting point that the analysis was run to determine how many of the amenities were within a 5, 10, and 15 minute bike.',
             location: {
@@ -209,13 +210,17 @@ bearing: 0.09
             onChapterExit: [{
                 layer: 'centroid',
                 opacity: 0
-                }]
+                },
+                {
+                    layer: 'trial_flat',
+                    opacity: 0
+                    }]
         },
         {
             id: 'other-identifier4',
             alignment: 'right',
             hidden: false,
-            title: 'Gelderland Example',
+            title: 'Geldorp Example',
             
             description: 'Here we see the resulting isochrones for a 5 minute (dark blue), 10 minute (blue) and 15 minute (light blue) bike ride. The next process totaled the number of different amenities within each isochrone. For this example the results were as follows:<br><br><b>5 minute</b>: 5 schools, 4 supermarkets, 1 station, and 3 GP’s <br><b> 10 minute</b>: 9 schools, 7 supermarkets, 1 station, 6 GP’s <br><b>15 minute</b>: 11 schools, 10 supermarkets, 1 station, 6 GP’s<br><br> Clearly this example hexagon is a complete neighborhood as is surpasses the criteria of at least 1 of each of the 4 amenities within a 15 minute bike ride. In fact, it does all this within a 5 minute bike ride!',
             location: {
@@ -313,7 +318,7 @@ bearing: -0.52
             callback: '',
             onChapterEnter: [ {
                 layer: 'trial_flat_color',
-                opacity: 1
+                opacity: .7
                 },
                 {
                     layer: 'trial_3d',
@@ -329,7 +334,7 @@ bearing: -0.52
             alignment: 'right',
             hidden: false,
             image: 'https://i.ibb.co/drS5H2g/legend.jpg',
-            description: 'In the final step of the analysis we added the population data to each hexagon , represented as height to give a better idea of what communities are most in need. Continue to scroll to look at different views of the dataset and explore the results on your own. ',
+            description: 'In the final step of the analysis we added the population data to each hexagon , represented as height to give a better idea of what communities are most in need. Continue to scroll to look at different views of the dataset and explore the results on your own.<br><br>According to the data in the study zone:<br><b>72%</b> of the total population live within a 15 minute cycle of all ammenities,<br><b>23%</b> of the population live within a 15 minute cycle of 75% ammenities,<br><b>3%</b> of the population live within a 15 minute cycle of 50% ammenities,<br><b>1%</b> of the population live within a 15 minute cycle of 25% ammenities ',
             location: {
                 center: [5.7924, 51.38566],
 zoom: 10.36,
